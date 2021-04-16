@@ -1,0 +1,206 @@
+.main {
+  .main__recipe {
+    padding: 0 $side-margin;
+
+    .main__ariadna {
+      margin-top: $base-size * 2;
+      
+      .main__ariadna-list {
+        display: flex;
+        align-items: center;
+
+        .main__ariadna-item {
+          list-style: none;
+          margin-right: $base-size;
+
+          .main__ariadna-link{
+            text-decoration: none;
+            font-size: $base-size * 2;
+            font-weight: $light;
+            color: $purple-light;
+          }
+
+          .main__ariadna-link--active{
+            color: $purple-one;
+            font-weight: $medium;
+          }
+        }
+
+        .main__ariadna-item::after {
+          content: "→";
+          color: $purple-light;
+          margin-left: $base-size;
+        }
+
+        .main__ariadna-item-target::after {
+          content: none;
+        }
+      }
+    }
+
+    .main__recipe-title {
+      @extend %titleSec;
+    }
+
+    .main__img-intro {
+      margin-bottom: $base-size * 5;
+      .main__img-intro-1 {
+        border-radius: $base-size * 4;
+      }
+    }
+
+    .main__recipe-block-subtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $base-size * 3;
+
+      .main__recipe-capsule {
+        display: flex;
+        align-items: center;
+
+        .main__recipe-capsule-link {
+          text-decoration: none;
+
+          .main__recipe-capsule-item {
+            background-color: $purple-one;
+            color: $white;
+            font-size: $base-size * 2 - 2;
+            font-weight: $semi-bold;
+            list-style: none;
+            padding: $base-size $base-size * 2;
+            margin-right: $base-size * 2;
+            border-radius: $base-size * 3;
+          }
+        }
+      }
+
+      .main__recipe-author {
+        display: flex;
+        align-items: center;
+
+        .main__recipe-author-name {
+          font-size: $base-size * 2;
+          color: $purple-one;
+          margin-right: $base-size * 2;
+        }
+
+        .main__recipe-author-pic-round {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+          .main__recipe-author-img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .main__recipe-block-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .main__recipe-paragraph {
+        color: $purple-dark;
+        margin-bottom: $base-size * 2 + 4;
+      }
+    }
+
+    .main__recipe-block-list {
+      .main__recipe-list-title {
+        font-size: 24px;
+        color: $purple-dark;
+        margin-bottom: $base-size * 3;
+        margin-top: $base-size;
+      }
+
+      .main__recipe-list-ingredients {
+        .main__recipe-list-ingredients-item {
+          list-style: none;
+          color: $white;
+          font-weight: $bold;
+          margin-bottom: $base-size * 3;
+          background-color: $purple-dark;
+          padding: $base-size - 4 $base-size;
+          border-radius: $base-size;
+        }
+      }
+
+      .main__recipe-list-prepare {
+        padding: 24px 56px;
+        margin-bottom: $base-size * 4;
+        border-radius: 24px;
+        background-color: $purple-one;
+        .main__recipe-list-prepare-item {
+          color: $white;
+          font-weight: $medium;
+          margin-bottom: 24px;
+        }
+        .main__recipe-list-prepare-item:nth-child(7) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .main__recipe-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 24px;
+
+      .main__recipe-gallery-content-img {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 24px;
+        border-radius: 24px;
+        overflow: hidden;
+        @include shadowAxisY(2px);
+
+        .main__recipe-gallery-img {
+          height: 100%;
+        }
+      }
+    }
+
+  }
+}
+
+/*=======================================*\
+MEDIA QUERIES
+\*=======================================*/
+
+@media screen and (max-width: 1024px) {
+  .main {
+    .main__recipe {
+      padding: 0 $base-size * 3;
+
+      .main__ariadna {
+        .main__ariadna-list {
+          .main__ariadna-item::after {
+            display: none;
+          }
+        }
+      }
+
+      .main__recipe-block-subtitle {
+        flex-direction: column;
+        .main__recipe-capsule {
+          flex-wrap: wrap;
+          .main__recipe-capsule-link {
+            .main__recipe-capsule-item {
+              margin-bottom: $base-size;
+              margin-right: $base-size;
+              font-size: $base-size + 4;
+            }
+          }
+        }
+      }
+
+    }
+    .main__video-no-margin {
+      margin: 0;
+    }
+  }
+}

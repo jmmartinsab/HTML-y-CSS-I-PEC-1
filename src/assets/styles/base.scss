@@ -1,0 +1,24 @@
+/**
+*Base document to import your scss modules
+*/
+
+/**
+*Import variables and dependencies
+*/
+
+//Variables
+@import "variables";
+@import "inherited";
+@import "functions";
+
+//Dependencies
+@import "hamburgers/_sass/hamburgers/hamburgers.scss";
+
+/**
+*Import page layouts of your pages
+*/
+@import "layouts/home";
+@import "layouts/categories";
+@import "layouts/about";
+@import "layouts/cite";
+@import "layouts/detail"

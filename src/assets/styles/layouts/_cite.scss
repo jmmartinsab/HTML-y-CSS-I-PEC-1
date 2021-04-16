@@ -1,0 +1,54 @@
+.main {
+  .main__cite {
+    margin: $base-size * 5 $side-margin 0 $side-margin;
+
+    .main__cite-title {
+      @extend %titleSec;
+    }
+
+    .main__cite-block-text {
+      margin-bottom: $base-size * 5;
+
+      .main__cite-text {
+        color: $purple-dark;
+        width: 56vw;
+      }
+    }
+
+    .main__cite-list {
+      padding-left: $base-size * 2;
+      .main__cite-item {
+        color: $purple-dark;
+        margin-bottom: $base-size * 3;
+        .main__cite-link {
+          text-decoration: none;
+          color: $purple-one;
+        }
+      }
+    }
+  }
+}
+
+/*=======================================*\
+MEDIA QUERIES
+\*=======================================*/
+
+@media screen and (max-width: 1024px) {
+  .main {
+    .main__cite {
+      margin: $base-size * 5 $base-size * 3 0 $base-size * 3;
+
+      .main__cite-block-text {
+        .main__cite-text {
+          width: 100%;
+        }
+      }
+
+      .main__cite-list {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use "sass:color";
+
+/**
+*FONTS
+*/
+
+$main-font: "Poppins", arial, sans-serif;
+$font-size: 18px;
+
+//weights
+$light: 300;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+/**
+*SPACING & SIZES
+*/
+
+$base-size: 8px;
+$side-margin: $base-size * 8;
+$document-width: 100%;
+
+/**
+*COLOURS
+*/
+
+$white: #fff;
+$purple-one: rgb(61, 9, 128);
+$purple-light: #9B8BB0;
+$purple-dark: #13002D;
+$shadow: rgba(61, 9, 128, 0.3);

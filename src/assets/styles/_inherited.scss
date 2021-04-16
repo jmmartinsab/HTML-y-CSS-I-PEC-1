@@ -1,0 +1,30 @@
+/**
+*inherited
+*/
+
+//Use @extend to run your inherited properties
+
+%global {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  font-size: $font-size;
+  max-width: $document-width;
+  scroll-behavior: smooth;
+}
+
+%aspectRatio {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+%titleSec {
+  font-size: $base-size * 4;
+  font-weight: $bold;
+  margin: $base-size * 5 0;
+  color: $purple-one;
+}

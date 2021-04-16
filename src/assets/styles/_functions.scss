@@ -1,0 +1,27 @@
+/**
+*MIXINS
+*/
+
+//Use @include to run your mixin
+
+//Give a value positive or negative to box-shadow
+@mixin shadowAxisY($axisY) {
+  box-shadow: 0 $axisY 4px $shadow;
+}
+
+@mixin pictureCard($pic) {
+  background: linear-gradient(
+      0deg,
+      rgba(15, 1, 30, 0.2) 70%,
+      rgba(15, 1, 30, 0.9) 100%
+    ),
+    url($pic);
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin imageCard($img) {
+  background-image: url($img);
+  background-size: cover;
+  background-position: center;
+}

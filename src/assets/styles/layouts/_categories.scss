@@ -1,0 +1,129 @@
+.main {
+  .main__categorie {
+    margin: 0 $side-margin;
+
+    .main__categorie-title {
+      @extend %titleSec;
+    }
+
+    .main__categorie-intro {
+      width: 46vw;
+      color: $purple-dark;
+      margin-bottom: $base-size * 5;
+    }
+
+    .main__categorie-link {
+      text-decoration: none;
+    }
+    .main__categorie-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: $base-size * 4;
+      padding-right: $base-size * 3;
+      border-radius: $base-size * 3;
+      background-color: rgb(248, 235, 255);
+      @include shadowAxisY(2px);
+
+      .main__categorie-img {
+        width: $base-size * 32.5;
+        height: $base-size * 32.5;
+        border-radius: $base-size * 3;
+        margin-right: $base-size * 5;
+      }
+      .main__categorie-img-one {
+        @include imageCard("https://thermomix-cordoba.es/media/Posts/attachments/58ce44a4f6258fa0f7661f6039f80600.jpg");
+      }
+      .main__categorie-img-two {
+        @include imageCard("http://1.bp.blogspot.com/-w-vEkHDcQuM/T19OJTMZT0I/AAAAAAAAACw/_voqZxSRQBQ/s1600/ComaPorMenos0186+2.jpg");
+      }
+      .main__categorie-img-three {
+        @include imageCard("https://www.cuerpomente.com/medio/2019/07/03/receta-plato-unico_9aac6f96_1200x630.jpg");
+      }
+    }
+
+    .main__categorie-container:hover {
+      box-shadow: 0 4px 6px 4px $shadow;
+      background-color: $white;
+    }
+
+    .main__categorie-block-text {
+      .main__categorie-card-title {
+        color: $purple-one;
+        margin-bottom: $base-size * 2;
+      }
+      .main__categorie-card-text {
+        color: $purple-dark;
+        width: 50vw;
+      }
+
+      .main__categorie-card-menu {
+        display: flex;
+        margin-top: $base-size * 4;
+        .main__categorie-card-link {
+          text-decoration: none;
+          margin-right: $base-size * 2;
+          display: flex;
+          align-items: center;
+
+          .main__categorie-card-icon {
+            margin-right: $base-size;
+            font-size: $base-size * 2;
+            color: $purple-light;
+          }
+
+          .main__categorie-card-item {
+            color: $purple-light;
+            list-style: none;
+          }
+        }
+        .main__categorie-card-link:hover .main__categorie-card-item {
+          color: $purple-one;
+        }
+        .main__categorie-card-link:hover .main__categorie-card-icon {
+          color: $purple-one;
+        }
+      }
+    }
+  }
+}
+
+/*=======================================*\
+MEDIA QUERIES
+\*=======================================*/
+
+@media screen and (max-width: 768px) {
+  .main {
+    .main__categorie {
+      margin: 0 $base-size * 3;
+
+      .main__categorie-intro {
+        width: 100%;
+      }
+
+      
+        .main__categorie-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-right: 0;
+
+          .main__categorie-img {
+            margin-right: 0;
+            width: 100vw;
+            height: 80vw;
+          }
+
+          .main__categorie-block-text {
+            padding: $base-size * 2;
+            .main__categorie-card-title {
+              font-size: 6vw;
+            }
+            .main__categorie-card-text {
+              width: 100%;
+            }
+          }
+        }
+      
+    }
+  }
+}

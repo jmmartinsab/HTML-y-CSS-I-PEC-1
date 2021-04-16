@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/images/web-16x16.png" sizes="16x16" />
+  <!-- Link to base sheet of SASS -->
+  <link rel="stylesheet" type="text/css" href="./assets/styles/base.scss" />
+  <!-- Link to font family -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <!--Link to fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Home</title>
+</head>
+
+<body>
+  <header id="head" class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="../src/assets/images/saturn.png" alt="Saturn-logo">
+      </a>
+    </div>
+
+    <button class="hamburger hamburger--vortex" id="hamburger">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <nav class="header__menu-container js-header__menu-container">
+      <ul class="header__menu js-header__menu">
+        <li class="header__item">
+          <a class="header__link" href="categories.html">Recetas</a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link" href="about.html">Sobre nosotros</a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link" href="cite.html">Fuentes</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="main__hero">
+      <h1 class="main__hero-tittle">Descubre la gastronomía de saturno</h1>
+      <p class="main__hero-description"> Los mejores platos de este maravilloso planeta estarán a tu disposición. No
+        pierdas la oportunidad de conocer más sobre la asociación gastronómica saturniana.</p>
+
+      <a class="main__hero-btn-link" href="about.html">
+        <div class="main__hero-btn">
+          <p class=" main__hero-btn-txt">SABER MÁS</p>
+        </div>
+      </a>
+
+    </section>
+
+    <section class="main__home-cards">
+      <div class="main__cards-container">
+        <a class="main__card-link" href="about.html">
+          <div class="main__card main__card-one">
+            <p class="main__card-title">Sobre nosotros</p>
+          </div>
+        </a>
+
+        <a class="main__card-link" href="categories.html">
+          <div class="main__card main__card-two">
+            <p class="main__card-title">Recetas</p>
+          </div>
+        </a>
+
+        <a class="main__card-link" href="cite.html">
+          <div class="main__card main__card-three">
+            <p class="main__card-title">Fuentes</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__legal">
+      <a class="footer__item" href="#">Aviso legal</a>
+      <a class="footer__item" href="#">Politica de privacidad</a>
+    </div>
+
+    <p class="footer__info">&copy; 2021 Ministerio gastronómico de saturno</p>
+
+    <div class="footer__social">
+      <a class="footer__link" href="#"><i class="footer__icon fab fa-twitter"></i></a>
+      <a class="footer__link" href="#"><i class="footer__icon fab fa-facebook-f"></i></a>
+      <a class="footer__link" href="#"><i class="footer__icon fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Link to base JS of the project -->
+  <script src="./assets/scripts/base.js"></script>
+</body>
+
+</html>
